@@ -1,0 +1,163 @@
+.google-icon  {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    text-align: center;
+}
+.hi-1 {
+   color: white;
+
+}
+.login-main {
+    display: flex;
+    
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.left-4-tx {
+    margin-top: 50%;
+}
+.left-3{
+    background-color: rgb(92,43,255);
+   
+    color: white;
+   padding: 20px;
+    margin: 10px 10px 10px 100px;
+
+}
+.left-31{
+    background-color: rgb(92,43,255);
+    height: 600px;
+   
+    color: white;
+   padding: 20px;
+    margin: 10px 10px 10px 100px;
+
+}
+.right-3{
+    margin: 10px 10px 10px 10px;
+    padding: 20px;
+
+
+
+}
+
+.log-i {
+   color: white;
+    font-size: 35px;
+
+}
+.link-0 {
+    color: rgb(92,43,255);
+    /* font-size: 26px; */
+    font-weight: 400;
+}
+
+.link-1 {
+    /* color: rgb(92,43,255); */
+    font-size: 26px;
+    
+
+}
+.input-login1 {
+    background-color: rgb(236, 235, 255);
+    width: 100%;
+    height: 50px;
+    border: none;
+}
+.input-login {
+    background-color: rgb(236, 235, 255);
+    width: 100%;
+    height: 50px;
+    border: none;
+
+}
+
+.label {
+    font-size: 20px;
+ 
+    /* color: rgb(92,43,255); */
+}
+
+.login {
+    background-color: rgb(92,43,255);
+    color:  rgb(236, 235, 255);
+    border: none;
+    width: 30%;
+    height: 40px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.other-login {
+    display: flex;
+
+}
+.input-login, select, textarea{
+    color: rgb(27, 39, 102);
+    font-size: 20px;
+    
+}
+.show-div {
+    display: none;
+}
+
+
+
+
+@media (max-width: 998px)  {
+
+    .right-3{
+        margin: 0;
+        padding: 0;
+    }
+    .login-main1{
+     width: fit-content;
+    }
+    .login-main {
+     
+        width: 100%;
+    }
+    .left-3{
+        display: none;
+      
+    }
+    .show-div{
+        display:block;
+     
+       color: rgb(27, 39, 102);
+       width: 100%;
+
+    }
+    .log-i {
+        color: rgb(92,43,255);
+
+    }
+    .hi-1{
+        color: rgb(92,43,255);
+
+    }
+    .other-login{
+        display: block;
+        width: 100%;
+    }
+    .link-1{
+        font-size: 13px;
+    }
+    .link-0{
+        font-size: 20px;
+
+    }
+    .yup {
+        width: 100%;
+    }
+    .login{
+        width:100%;
+        
+    }
+    .logout{
+        width: 50%;
+    }
+    .input-review {
+        width: 80%;
+    }
+}
