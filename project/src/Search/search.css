@@ -39,4 +39,20 @@
     transform: rotate(-15deg);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   }
-  
+  @media (max-width: 768px) {
+  .search-container {
+    margin: 20px auto; /* Center the search box */
+    width: 90%; /* Make it wider on small screens */
+    padding: 10px;
+  }
+
+  .search-input {
+    font-size: 14px; /* Slightly smaller font */
+    height: 40px; /* Still fixed height */
+  }
+
+  .search-btn {
+    padding: 8px 12px; /* Slightly smaller button */
+    font-size: 14px;
+  }
+}
