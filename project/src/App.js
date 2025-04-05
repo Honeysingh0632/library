@@ -116,7 +116,7 @@ const App = () => {
 
 
 
-          <Route path="/AdminPanel" element={<Admin />} > 
+          <Route path="/Adminpanel" element={<Admin />} > 
             <Route path="ContactUser" element={<ContactUser />} />
             <Route path="Userlogin" element={<UserLogin />} />
             <Route path='BookSugguestData' element={<BookSugguestData/>} />
