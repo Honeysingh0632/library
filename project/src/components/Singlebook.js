@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import { baseurl } from '../Config/config';
+import { baseurl, keyid } from '../Config/config';
+
 import Rugh from './Rugh';
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -65,10 +66,10 @@ function Singlebook() {
 
     // Initialize Razorpay payment
     const initPayment = (data, book) => {
-        console.log(`${baseurl}${book.image}`, process.env.REACT_APP_RAZORPAY_KEY_ID);
+        console.log(`${baseurl}${book.image}`, keyid);
         
         const options = {
-            key: process.env.REACT_APP_RAZORPAY_KEY_ID, // Ensure this is set correctly
+            key: keyid,
             amount: data.amount,
             currency: data.currency,
             name: book.AddBookname,
@@ -92,7 +93,7 @@ function Singlebook() {
                             oldPrice: bookData.bookoldprice,
                             description: bookData.bookdesc,
                         },
-                        user:{ userId,email,firstName,lastName}, // Make sure this is not undefined
+                        user:{ userId,email,firstName,lastName}, 
                         quantity,
                         totalPrice: bookData.bookprice * quantity,  
                     };
